@@ -42,3 +42,5 @@ const farben = ['WHITE', 'BLACK']
     });
 };
 });
+const config = require('./config.json');
+client.login(config.token)
