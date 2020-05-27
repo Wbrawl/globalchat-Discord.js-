@@ -35,7 +35,7 @@ const farben = ['WHITE', 'BLACK']
     embed.addField("Nachricht:", message.content);
     embed.setFooter("Id: " + message.author.id + "\nServer: " + message.guild);
     message.delete()
-    bot.guilds.forEach(g => {
+    client.guilds.forEach(g => {
       try{
         client.channels.get(sett[g.id].globalchat).send(embed)
       } catch(e) {return;} 
